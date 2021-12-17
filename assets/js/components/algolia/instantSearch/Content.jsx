@@ -2,7 +2,7 @@ import React from "react";
 import { Hits } from "react-instantsearch-dom";
 import { connectStateResults } from "react-instantsearch/connectors";
 
-import Hit from "./Hit.js";
+import Hit from "./Hit.jsx";
 
 export default connectStateResults(
     ({ searchState, searchResults }) =>

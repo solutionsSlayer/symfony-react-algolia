@@ -21,6 +21,8 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@algolia/autocomplete-js": "^1.5.1",
+        "@algolia/autocomplete-theme-classic": "^1.5.1",
         "algoliasearch": "^4.11.0",
         "instantsearch.css": "^7.4.5",
         "prop-types": "^15.7.2",
