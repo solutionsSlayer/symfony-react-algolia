@@ -21,6 +21,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@algolia/autocomplete-core": "^1.5.1",
         "@algolia/autocomplete-js": "^1.5.1",
         "@algolia/autocomplete-theme-classic": "^1.5.1",
         "algoliasearch": "^4.11.0",

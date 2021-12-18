@@ -36,10 +36,22 @@ function Index() {
                             });
                         },
                         templates: {
-                            item({ item, components }) {
-                                return <ProductItem hit={item} components={components} />;
+                            item({ item, createElement }) {
+                                return createElement('div', {
+                                    dangerouslySetInnerHTML: {
+                                        __html: `
+                                        <div class="algolia-custom-item">
+                                            <img
+                                                src="${item.image}"
+                                                alt="${item.name}" />
+                                            <div style="padding-left: 8px; font-weight: bold;">
+                                              ${item.name}
+                                            </div>
+                                        </div>`,
+                                    },
+                                });
                             },
-                        },
+                        }
                     },
                 ]}
             />
